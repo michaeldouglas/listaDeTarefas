@@ -46,6 +46,16 @@ npm install
 npm run dev
 ```
 
+### Alteração do padrão do projeto
+
+Caso deseje alterar o tempo inicial, final e remover o vídeo do login basta alterar as variáveis de ambiente:
+
+```bash
+VITE_SHOW_VIDEO=true
+VITE_START_CLOCK=5
+VITE_END_CLOCK=30
+```
+
 ### Detalhes do Login
 
 Você pode usar as seguintes credenciais para fazer login no sistema:
