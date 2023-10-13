@@ -90,7 +90,7 @@ const ItemList: React.FC<ItemListProps> = ({ items, deleteItem, updateItem }) =>
                   <div className="flex flex-col">
 
                     <div>Tarefa: {item.text}</div>
-                    <div>{new Date(item.date).toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit', second: '2-digit' })} <FontAwesomeIcon icon={faClock} className={`${getClockColor(item.date)} mr-2`} /></div>
+                    <div>{item.date} <FontAwesomeIcon icon={faClock} className={`${getClockColor(item.date)} mr-2`} /></div>
                   </div>
                 )}
                 <div>

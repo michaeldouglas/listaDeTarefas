@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-import { DateTime } from 'luxon';
 import CreateItemForm from './CreateItemForm';
 import ItemList from './ItemList';
 
@@ -34,8 +33,7 @@ const Items = () => {
     newItems[index].text = newText;
 
     // Atualize a data para a data atual
-    const currentDate = DateTime.now().setZone("America/Sao_Paulo");
-    newItems[index].date = currentDate.toISO() ?? "";
+    newItems[index].date = new Date().toLocaleString('pt-BR');
 
     setItems(newItems);
     localStorage.setItem('items', JSON.stringify(newItems));
