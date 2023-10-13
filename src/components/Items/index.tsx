@@ -34,7 +34,8 @@ const Items = () => {
     newItems[index].text = newText;
 
     // Atualize a data para a data atual
-    newItems[index].date = DateTime.local().toFormat("dd/MM/yyyy, HH:mm:ss");
+    const currentDate = DateTime.now().setZone("America/Sao_Paulo");
+    newItems[index].date = currentDate.toISO() ?? "";
 
     setItems(newItems);
     localStorage.setItem('items', JSON.stringify(newItems));

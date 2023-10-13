@@ -1,3 +1,4 @@
+import { DateTime } from 'luxon';
 import { useState } from 'react';
 
 type Item = {
@@ -15,7 +16,8 @@ const CreateItemForm: React.FC<CreateItemFormProps> = ({ addItem }) => {
   const handleSubmit = (e: { preventDefault: () => void; }) => {
     e.preventDefault();
     if (text) {
-      const newItem: Item = { text, date: new Date().toLocaleString('pt-BR') };
+      const currentDate = DateTime.now().setZone("America/Sao_Paulo");
+      const newItem: Item = { text, date: currentDate.toISO() ?? "" };
       addItem(newItem);
       setText('');
     }
