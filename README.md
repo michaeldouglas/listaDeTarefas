@@ -1,4 +1,4 @@
-# Projeto de Sistema de Tarefas com React + TypeScript + Vite + Rust 
+# Projeto de Sistema de Tarefas com React + TypeScript + Vite + Rust + cypress
 
 Este projeto é uma aplicação web que permite aos usuários gerenciar suas tarefas e lista de afazeres. Ele foi construído com uma variedade de tecnologias para estudo de caso.
 
@@ -13,6 +13,8 @@ Este projeto é desenvolvido usando as seguintes tecnologias:
 - **Vite**: Um construtor de aplicativos web que fornece um ambiente de desenvolvimento rápido e eficiente para projetos web modernos.
 
 - **Rust (SWC)**: Uma linguagem de programação segura e de alto desempenho usada para otimizar partes críticas do código do aplicativo.
+
+- **Cypress**: Cypress é uma ferramenta de teste de front-end para aplicativos da web. 
 
 ### Versão do Node
 
